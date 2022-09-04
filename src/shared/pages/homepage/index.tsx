@@ -17,7 +17,7 @@ const HomePage = () => {
 
             <SearchInput></SearchInput>
 
-            <GreenSearchButton Metodo = "função"></GreenSearchButton>
+            <GreenSearchButton></GreenSearchButton>
 
             <NewProtocoloButton></NewProtocoloButton>
             <FooterComponent/> 
