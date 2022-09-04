@@ -9,8 +9,6 @@ const GreenSearchButton = (metodo: any) => {
     const {infoState, infoDispatch} = searchContext;
     
     const ToSearch = () => {
-        const input = document.querySelector('.SearchInput') as HTMLInputElement;
-
         loadSearchedInfos(infoDispatch);
     }
 
