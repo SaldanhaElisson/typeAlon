@@ -10,9 +10,9 @@ const SearchInput = () => {
             
             <input 
                 type="text" 
-                name="HomePageSearchField" 
-                id="HomePageSearchField"  
-                className="SearchInput" 
+                name="HomePageSearchField"
+                id="HomePageSearchField"
+                className="SearchInput"
                 placeholder="Email, matrícula ou n° protocolo..."
             />
 

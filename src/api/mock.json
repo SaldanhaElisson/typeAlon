@@ -1,0 +1,12 @@
+{
+  "alunos": [{
+    "matricula": 10000000000001,
+    "nome": "Joab Vite Windows",
+    "email": "joab.vite99@gmail.com"
+  },
+  {
+    "matricula": 10000000000000,
+    "nome": "Maria Live Server Json",
+    "email": "maria.live00@gmail.com"
+  }]
+}

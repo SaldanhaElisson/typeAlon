@@ -23,12 +23,16 @@
 
 
 .SearchInput::-webkit-input-placeholder {
-   text-indent: 10px;
+   text-indent: 12px;
    font-family: var(--font-open);
 }
 
 .SearchInput:focus{
-    text-indent: 10px;
+    text-indent: 12px;
+ }
+
+ .SearchInput {
+    text-indent: 7px;
  }
 
 .boxSearchIcon{
