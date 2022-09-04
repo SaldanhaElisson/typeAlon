@@ -1,23 +1,27 @@
 import { Dispatch } from 'react';
 import * as Types from './types'
 
-export type State = {
-  initialState: string[];
+export type State = {}
+
+type Payload = {
+  payload: string[];
+  alunos: object[];
 }
 
 type Action = {
-  type: string,
-  payload?: string[]
+  type: string;
+  payload: Payload;
+  alunos: Payload;
 }
 
 export interface IContextProp {
-  infoState: State,
-  infoDispatch: Dispatch<Action>,
+  infoState: State;
+  infoDispatch: Dispatch<Action>;
   payload?: string;
 }
 
-const filteredArray = (array: any) => {
-  const input = document.querySelector('.SearchInput');
+const filteredArray = (array: any[]) => {
+  const input = document.querySelector('.SearchInput') as HTMLInputElement;
 
   const filtered = array.filter((e) => {
     Object.values(e).filter((itemArray) => {
@@ -31,8 +35,6 @@ const filteredArray = (array: any) => {
 export const infoReducer = (state: State, action: Action) => {
   switch(action.type) {
     case Types.REQ_SUCESS: {
-      //Pegar o valor do input e filtrar o array
-      
       filteredArray(action.payload.alunos);
       return {...state, initialState: action.payload};
     }
