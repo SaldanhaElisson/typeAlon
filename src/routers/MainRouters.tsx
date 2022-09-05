@@ -1,6 +1,7 @@
 
 import HomePage from "../shared/pages/homepage";
 import SearchPage from "../shared/pages/searchPage";
+import { InfosProvider } from "../contexts/ContextAPI";
 
 import {
     BrowserRouter,
@@ -13,13 +14,13 @@ import {
   const MainRouters = () => {
         return(
             <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<HomePage />}></Route>
-                    <Route path="search" element={<SearchPage/>}></Route>
-
-                </Routes>
+                <InfosProvider>
+                    <Routes>
+                        <Route path="/" element={<HomePage />}></Route>
+                        <Route path="search" element={<SearchPage/>}></Route>
+                    </Routes>
+                </InfosProvider>
             </BrowserRouter>
-
         )
   }
 

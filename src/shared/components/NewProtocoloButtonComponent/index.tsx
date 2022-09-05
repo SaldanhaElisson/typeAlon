@@ -6,7 +6,7 @@ import './style.css'
 const NewProtocoloButton = () => {
     return(
         <>
-            <button className="NewProtocoloButton"> FAZER PROTCOLO</button>
+            <button className="NewProtocoloButton">FAZER PROTOCOLO</button>
         </>
     )
 }

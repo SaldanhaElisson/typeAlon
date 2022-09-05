@@ -1,16 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import './style.css'
+import { loadSearchedInfos } from "../../../contexts/ContextAPI/actions";
+import { InfosContext } from "../../../contexts/ContextAPI/context";
 
-const GreenSearchButton = (metodo:any) => {
-    
-    const ToSearch = () => {
-        console.log(`buscadando ${metodo}...`)
-    }
+const GreenSearchButton = () => {
+
+    const searchContext = useContext(InfosContext);
+    const {infoState, infoDispatch} = searchContext;
 
     return (
-
         <>
-            <button className="SearchGreenButton" onClick={() => ToSearch()}>
+            <button className="SearchGreenButton" onClick={() => loadSearchedInfos(infoDispatch)}>
                 PESQUISAR
             </button>
         </>
