@@ -20,8 +20,8 @@ const RowDataComponent = () => {
 
             </div>
 
-            <div className="collapse" id="collapseExample">
-                    <div className="card card-body">
+            <div className="collapse gridTable" id="collapseExample">
+                    <div className="card card-body gridTableData">
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                     </div>
                 </div>
