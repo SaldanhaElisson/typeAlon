@@ -1,10 +1,20 @@
 import HeaderSearchPageCompenent from '../../components/HeaderSearchPageComponent/HearderSearchPageComponent'
+import SearchPageInputComponent from '../../components/SearchPageInputComponent'
+import TableSearchComponent from '../../components/TableSearchComponent'
 
 
 import './style.css'
  const SearchPage = () => {
     return(
-        <HeaderSearchPageCompenent />
+        <>
+            <HeaderSearchPageCompenent />
+
+            <SearchPageInputComponent/>
+
+            <TableSearchComponent/>
+
+        </>
+       
     )
 }
 

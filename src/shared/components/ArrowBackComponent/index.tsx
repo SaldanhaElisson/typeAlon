@@ -1,18 +1,23 @@
+import { useNavigate } from 'react-router-dom'
+
 import ArrowLeftCircle from '../../assets/img/ArrowLeftCircleFill.svg'
-import { backPageHome } from '../../utils/backPage'
 
 import './style.css'
 
 const ArrowBackComponent = () => {
+    const navigate = useNavigate();
+
+    const backpage = () => {
+        navigate('../');
+    }
+    
     return(
-        <div className="boxArrowBack" onClick={() => {console.log("clicado")} >
+        <div className="boxArrowBack" onClick={() => backpage()     }>
             <img src = {ArrowLeftCircle} alt="seta de voltar" />
             <p className="back"> Voltar</p>
         </div>
           
-        
     )
-
 }
 
-export default ArrowBackComponentj
+export default ArrowBackComponent

@@ -7,11 +7,9 @@ const FooterComponent = () => {
     return(
         <>
             <footer>
-                
                    <p className="textFooter">
                         BY Lasic 2022 🖤
                     </p>     
-                
             </footer>
         </>
     )

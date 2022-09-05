@@ -6,8 +6,8 @@ import './style.css'
 const HeaderSearchPageCompenent = () => {
     return (
         <div className="SearchPageHeader">
-            <LogoSearchPage />
             <ArrowBackComponent />
+            <LogoSearchPage />
         </div>
     )
 }
