@@ -7,7 +7,6 @@ const TitleCollunsComponent = () => {
             <p className = "tittleTable"> N° Prot. </p>
             <p className = "tittleTable"> Status </p>
             <p className = "tittleTable"> Documentos </p>
-
         </div>
 
     )
